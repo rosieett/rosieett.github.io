@@ -1,0 +1,293 @@
+body{
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 0 auto;
+  background-color: #fff;
+}
+/* -------------------------------------------------- */
+/* HEADER */
+/* -------------------------------------------------- */
+
+.heroText{
+  text-align: center;
+  margin: 40px 0 -30px 0;
+}
+
+.heroImg img{
+  background-position: center;
+  width: 100%;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 64px;
+  padding: 0 20px 10px 20px;
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+h2{
+  font-size: 24px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+}
+
+h3{
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #005829;
+  padding: 50px 0 5px 0;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+h5 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.maindiv{
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.studyIntro {
+  margin-top: 20px;
+  max-width: 1200px
+}
+
+.ital{
+  font-style: italic;
+}
+
+.heroButtons{
+  text-align: center;
+  margin: 20px 30px 10px 30px;
+}
+
+.btn-primary, .btn-primary:not(:disabled):not(.disabled):active{
+  background-color: #318e5a;
+  border-color: #318e5a;
+}
+
+.btn-primary:hover{
+  background-color: #2b7a50;
+  border-color: #2b7a50;
+}
+
+
+
+/* -------------------------------------------------- */
+/* SORTER */
+/* -------------------------------------------------- */
+
+
+.bold{
+  font-weight: 700;
+}
+
+.grayBg{
+  background-color: #f1f1f1;
+}
+
+.text{
+  padding-left: 0px;
+}
+
+.introText {
+  border-bottom: 1px solid gray;
+  padding-bottom: 5px;
+  margin: 30px 0 30px 0;
+}
+
+.col-lg-6 img{
+  width: 100%;
+}
+
+.internalWrap{
+  padding-right: 20px;
+  padding-left: 0
+}
+
+.subhead{
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+/* -------------------------------------------------- */
+/* FILTERS */
+/* -------------------------------------------------- */
+
+.theSorter{
+  height: 100%;
+  border-bottom: 100px;
+}
+
+.buttonGroup{
+  display: inline-block;
+  margin: 10px;
+}
+
+.buttonGroup:first-child{
+  margin-left: -10px;
+}
+
+.buttonGroup:last-child{
+  margin-left: 30px;
+}
+
+.button{
+  display: inline-block;
+  padding: 5px 15px;
+  margin-right: -7px;
+  background-color: #F8F8F8;
+  background-image: linear-gradient( hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1) );
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #222;
+}
+
+
+.button:first-child{
+  margin-right: 0;
+}
+
+.button:hover{
+  text-decoration: none;
+  color:  #318e5a;
+}
+
+.is-clicked{
+  background-color: #318e5a;
+  color: white;
+}
+
+.is-clicked:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.label{
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #fff;
+  background-image: none;
+  border: none;
+  border-radius: none;
+  font-size: 18px;
+  color: #222;
+  font-weight: 300;
+}
+
+.green{
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #318e5a;
+}
+
+.filter{
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+}
+
+.muppetImg{
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 10px;
+  box-shadow: 0 6px 6px -8px rgba(0,0,0,.7);
+}
+
+.grid-item {
+  max-width: 100%;
+  height: 130px;
+}
+
+.grid-item img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grid-item p{
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.dropdown{
+  display: inline-block;
+}
+
+/* .dropdown-item.active, .dropdown-item:active{
+  background-color: #318e5a;
+} */
+
+.sortingArea{
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 100%;
+  padding-bottom: 100px;
+}
+
+.summary{
+  background-color: gray;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.summaryImg{
+  width: 100%;
+}
+
+/* -------------------------------------------------- */
+/* INFOGRAPHICS */
+/* -------------------------------------------------- */
+/* .infographicsArea {
+  max-width: 1400px;
+  margin: 0 auto;
+} */
+
+.infoImg{
+  width: 100%;
+  filter: drop-shadow(1px 1px 15px #eee);
+  padding-bottom: 20px;
+}
+
+.about{
+  margin-top: 30px;
+}
+
+.about h5{
+  padding-bottom: 10px;
+}
+
+.about p{
+  font-size: 12px;
+}
+
+footer {
+  width: 100%;
+  background-color:  #318e5a;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.headertop{
+    width: 100%;
+    background-color:  #318e5a;
+    height: 10px;
+}

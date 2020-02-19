@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Muppet Sorter</title>
+
+    <link rel="stylesheet"href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap" rel="stylesheet">
+    <link href="js/c3-0.7.10/c3.css" rel="stylesheet">
+
+
+
+  </head>
+  <body>
+
+    <header>
+      <h1 class="title">The Muppet Sorter</h1>
+<!--
+      <aside class="topNav">
+        <form class="navFilters show">
+          <label>Seen in</label>
+          <select>
+            <option>--</option>
+            <option>The Muppet Show</option>
+            <option>Sesame Street</option>
+            <option>All</option>
+          </select>
+        </form>
+
+        <form class="navFilters category">
+          <label>Muppet Category</label>
+          <select>
+            <option>--</option>
+            <option>Animal</option>
+            <option>Monster</option>
+            <option>Person</option>
+          </select>
+        </form>
+
+        <form class="navFilters performer">
+          <label>First performed/voiced by</label>
+          <select>
+            <option>--</option>
+            <option>Abby Hadfield</option>
+            <option>Bill Barretta</option>
+            <option>Brian Henson</option>
+            <option>Brian Muehl</option>
+            <option>Camille Bonora</option>
+            <option>Carl Banas </option>
+            <option>Carmen Osbahr</option>
+            <option>Caroll Spinney</option>
+            <option>Dave Goelz</option>
+            <option>David Rudman</option>
+            <option>Fran Brill</option>
+            <option>Frank Oz</option>
+            <option>Frankie Cordero</option>
+            <option>Graham Fletcher</option>
+            <option>Jerry Nelson</option>
+            <option>Jim Henson</option>
+            <option>Joey Mazzarino</option>
+            <option>John Lovelady</option>
+            <option>John Tartagoptiona</option>
+            <option>Judy Sladky</option>
+            <option>Kevin Clash</option>
+            <option>Lesoptione Carrara-Rudolph</option>
+            <option>Louise Gold</option>
+            <option>Martin P. Robinson</option>
+            <option>Matt Robinson</option>
+            <option>Peter optionnz</option>
+            <option>Richard Hunt</option>
+            <option>Stephanie D'Abruzzo</option>
+            <option>Steve Whitmire</option>
+            <option>Toby Towson </option>
+            <option>unknown</option>
+            <option>Various</option>
+          </select>
+        </form>
+            -->
+      <nav class="filters">
+
+        <div class="button-group filter-button-group">
+          <button class="button" data-filter="*">RESET</button>
+        </div>
+        <div class="button-group filter-button-group">
+          <button class="separator">Type of Muppet:</button>
+          <button class="button" data-type=".animal">Animal</button>
+          <button class="button" data-type=".person">Person</button>
+          <button class="button" data-filter=".person">Monster</button>
+          </div>
+        </div>
+        <div class="button-group filter-button-group">
+          <div class="button-set">
+            <button class="separator">Appeared on:</button>
+            <button class="button" data-show=".sesameStreet">Sesame Street</button>
+            <button class="button" data-filter=".theMuppetShow">The Muppet Show</button>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+    <section class="sortingArea">
+      <div class="grid">
+
+<!-- typical div -->
+        <div class="grid-item">
+          <img src="images/muppetImages/abbyCadabby.png" class="muppetImg" alt="Abby Cadabby" data-name="Abby Cadabby" data-show="sesameStreet" data-category="Person" data-voice="Leslie Carrara-Rudolph" data-episode="4109" data-year="2006">
+        </div>
+
+        <div class="grid-item">
+          <img src="images/muppetImages/afghanHound.png" class="muppetImg" alt="Afghan Hound" data-name="Afghan Hound" data-show="theMuppetShow" data-category="Animal" data-voice="Louise Gold" data-episode="217" data-year="1977">
+        </div>
+
+        <div class="grid-item">
+          <img src="images/muppetImages/aliceSnuffalupagus.png" class="muppetImg" alt="Alice Snuffalupagus" data-name="Alice Snuffalupagus" data-show="sesameStreet" data-category="Animal" data-voice="Judy Sladky" data-episode="2410" data-year="1988">
+        </div>
+
+        <div class="grid-item">
+          <img src="images/muppetImages/alistairCookie.png" class="muppetImg" alt="Alistair Cookie" data-name="Alistair Cookie" data-show="sesameStreet" data-category="Monster" data-voice="Frank Oz" data-episode="1162" data-year="1978">
+        </div>
+
+<!-- isotypo divs -->
+      <!-- <div class="grid-item sesameStreet person">
+        <img src="images/muppetImages/abbyCadabby.png" class="muppetImg" alt="Abby Cadabby">
+      </div>
+
+      <div class="grid-item theMuppetShow animal">
+        <img src="images/muppetImages/afghanHound.png" class="muppetImg" alt="Afghan Hound">
+      </div>
+
+      <div class="grid-item theMuppetShow person">
+        <img src="images/muppetImages/alistairCookie.png" class="muppetImg" alt="Alistair Cookie">
+      </div>
+
+      <div class="grid-item sesameStreet animal">
+          <img src="images/muppetImages/aliceSnuffalupagus.png" class="muppetImg" alt="Alice Snuffalupagus">
+        </div> -->
+
+
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="js/c3-0.7.10/c3.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="js/app.js" type="text/javascript">
+
+    </script>
+
+    </body>
+  </html>
